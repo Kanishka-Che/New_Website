@@ -165,16 +165,30 @@ button{
 
 /* our team*/
 
-.Our-team{
-    padding: 0 50px;
-    margin-top: 20px;
+.image-section {
+    display: flex;
+    justify-content: center; /* Align items horizontally */
+    align-items: center; /* Align items vertically */
+}
+
+.p6, .p7, .p8 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-   
-
+    align-items: center; /* Align items horizontally */
+    text-align: center; /* Align text center */
+    margin: 0 20px; /* Add some margin between items */
 }
+
+.p6 img, .p7 img, .p8 img {
+    max-width: 100%; /* Ensure images don't exceed their container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.Our-team {
+    padding: 0 50px;
+    margin-top: 20px;
+}
+
 .image-section img {
         padding: 0 50px;
         width: 50%;
@@ -267,4 +281,9 @@ button{
     flex-direction:row ;
     gap: 150px;
     padding-top: 50px;
+}
+
+
+*{
+    background: image photo 1px;
 }
